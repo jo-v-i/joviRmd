@@ -1,7 +1,7 @@
 #' Output endorsements from an Rmarkdown file
 #'
 #' Processes endorsements in the YAML header of an RMarkdown file and outputs them. Designed for use in distill templates
-#'
+#' @export
 print_endorsements = function() {
   endorsements = rmarkdown::metadata$endorsements
 
