@@ -11,7 +11,7 @@ print_endorsements = function() {
   }
 
   s = if (length(endorsements) > 1) "s" else ""
-  cat('<p><small>This currently paper has <a href="#endorsements">', length(endorsements), ' endorsement', s, '</a></small></p><hr>', sep = '')
+  cat('<p><small>This paper has <a href="#endorsements">', length(endorsements), ' endorsement', s, '</a></small></p><hr>', sep = '')
 
   cat('<h1 id="endorsements" class="appendix">Endorsements</h1>\n')
   for (e in endorsements) {
